@@ -1,0 +1,126 @@
+.back-btn { margin-bottom: 24px; }
+
+.car-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 28px;
+  align-items: start;
+}
+
+.car-detail-img {
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+}
+
+.car-detail-img img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.car-detail-meta { padding: 24px; }
+
+.car-detail-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.car-detail-title-row h1 { font-size: 1.6rem; font-weight: 800; }
+.car-detail-brand { color: var(--gray-500); font-size: 0.9rem; margin-top: 4px; }
+
+.car-detail-specs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.spec-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  background: var(--gray-100);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.car-detail-desc {
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  line-height: 1.7;
+}
+
+/* Booking panel */
+.booking-panel {
+  padding: 28px;
+  position: sticky;
+  top: 80px;
+}
+
+.booking-panel h2 { font-size: 1.3rem; margin-bottom: 16px; }
+
+.booking-price-hero {
+  background: var(--primary-light);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.booking-price-amount {
+  display: block;
+  font-family: 'Syne', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.booking-price-label { font-size: 0.85rem; color: var(--gray-500); }
+
+.booking-summary {
+  background: var(--gray-100);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  padding: 4px 0;
+  color: var(--gray-700);
+}
+
+.summary-row.total {
+  border-top: 1px solid var(--gray-300);
+  margin-top: 8px;
+  padding-top: 10px;
+  font-weight: 700;
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+.unavailable-notice {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.w-full { width: 100%; justify-content: center; }
+
+@media (max-width: 900px) {
+  .car-detail-layout { grid-template-columns: 1fr; }
+  .booking-panel { position: static; }
+}

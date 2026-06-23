@@ -1,0 +1,43 @@
+.cars-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.cars-header h1 { font-size: 1.8rem; font-weight: 800; }
+.cars-subtitle { color: var(--gray-500); font-size: 0.9rem; margin-top: 4px; }
+
+.filters-bar {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  margin-bottom: 28px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filters-bar .form-control {
+  flex: 1;
+  min-width: 140px;
+}
+
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.empty-icon { font-size: 4rem; margin-bottom: 16px; }
+.empty-state h3 { font-size: 1.3rem; margin-bottom: 8px; }
+.empty-state p { color: var(--gray-500); margin-bottom: 24px; }
+
+@media (max-width: 600px) {
+  .filters-bar { flex-direction: column; }
+  .filters-bar .form-control { width: 100%; }
+}
